@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Web02/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Web02/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Web03_mybatis01/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Web03_mybatis01/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Web04_mybatis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Web04_mybatis/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Web04_mybatis01/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Web04_mybatis01/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Web05_SqlSessionFactoryUtils01/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Web05_SqlSessionFactoryUtils01/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Web06_resultType/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Web06_resultType/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Web07_git/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Web07_git/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

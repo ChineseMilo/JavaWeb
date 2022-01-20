@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+<!--
+
+        使用properties标签引入外部的文件
+        目的：为了配置文件解耦，专门的信息有专门的配置文件来处理
+-->
+    <properties resource="jdbc.properties"/>
+
+<!--
+    使用typeAliases标签定义类的别名，而且可以定义多个别名,alias：表示别名
+    通过package标签扫描
+
+-->
+    <typeAliases>
+        <package name="com.xb.pojo"/>
+<!--        <typeAlias type="com.xb.pojo.User" alias="u"/>-->
+
+    </typeAliases>
+
+
+
+
+
+<!--
+    配置数据库的环境信息
+    environments:表示里面可以配置多个环境，defaule表示默认使用哪一个
+    environment：表示一个数据库的环境
+
+-->
+    <environments default="dev">
+        <environment id="dev">
+<!--            transactionManager：事务管理器 type：表示管理的对象，在这里表示对JDBC管理-->
+            <transactionManager type="JDBC">
+                <property name="..." value="..."/>
+            </transactionManager>
+<!--            dataSource：数据源：1、POOLED表示自带连接池；2、表示不使用连接池；3、JNDI表示使用JNDI的连接池-->
+            <dataSource type="POOLED">
+
+                <property name="driver" value="${jdbc.driver}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.user}"/>
+                <property name="password" value="${jdbc.password}"/>
+            </dataSource>
+        </environment>
+
+
+
+        <!--生产环境-->
+        <environment id="pro">
+            <transactionManager type=""></transactionManager>
+            <dataSource type=""></dataSource>
+        </environment>
+        <!--测试环境-->
+        <environment id="test">
+            <transactionManager type=""></transactionManager>
+            <dataSource type=""></dataSource>
+        </environment>
+    </environments>
+
+<!--    mapper标签：负责映射一个配置文件，
+        resource：配置文件的路径
+        package:扫描保重所有的映射文件-->
+    <mappers>
+<!--        <mapper resource="com/xb/dao/UserDao.xml"></mapper>-->
+        <package name="com.xb.dao"/>
+    </mappers>
+</configuration>

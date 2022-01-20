@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--映射配置文件，对应一个dao接口-->
+<!--namespace：对应dao接口的路径名-->
+<mapper namespace="com.xb.dao.UserDao">
+<!--
+    id：对应的dao接口中的方法名
+    resultTytp：对应dao接口中的实体类路径名
+    标签内容为sql语句
+
+-->
+    <select id="findAll" resultType="user">
+        select * from t_user;
+    </select>
+</mapper>
