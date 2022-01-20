@@ -35,4 +35,9 @@ public class User {
                 ", adress='" + adress + '\'' +
                 '}';
     }
+
+
+    public void show(){
+        System.out.println(213);
+    }
 }
