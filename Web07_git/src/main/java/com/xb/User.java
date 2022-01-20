@@ -28,11 +28,5 @@ public class User {
         this.adress = adress;
     }
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "name='" + name + '\'' +
-                ", adress='" + adress + '\'' +
-                '}';
-    }
+
 }
